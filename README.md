@@ -20,7 +20,7 @@ exit
 sudo su - postgres_user
 
 To get into the database from the console from the start as user: sudo su - postgres_user --> psql my_postgres_db
-Then you are switched to the desired database. Afterwards you can stat modifying or create whatever you want.
+Then you are switched to the desired database. Afterwards you can start modifying or create whatever you want.
 
 To drop a databse do the following:
 kill the server from the pgadmin icon and do the login again into your console from the start as user:
