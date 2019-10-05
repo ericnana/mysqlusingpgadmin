@@ -19,11 +19,11 @@ CREATE DATABASE my_postgres_db OWNER postgres_user;
 exit
 sudo su - postgres_user
 
-To sign into database from the console: sudo su - postgres_user --> psql my_postgres_db
+To get into the database from the console from the start as user: sudo su - postgres_user --> psql my_postgres_db
 Then you are switched to the desired database
 
 To drop a databse do the following:
-kill the server from the pgadmin icon and do the login again into your console from the start
+kill the server from the pgadmin icon and do the login again into your console from the start as user:
 sudo -i -u postgres -> psql -->'postgres=# drop database name_of_the_database;' or DROP DATABASE name_of_the_database;
 
 To Grant privileges:
