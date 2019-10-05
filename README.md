@@ -12,7 +12,7 @@ After these two ran the python scripts to perform all sort of queries needed.
 Connect to Postgres from cammand line
 sudo -i -u postgres --> psql
 
-In order to create a database after setting the server from pgadmin gui you do  the following:
+In order to create a database after setting the server from pgadmin gui you do the following from command line:
 CREATE USER postgres_user WITH PASSWORD 'password';
 CREATE DATABASE my_postgres_db OWNER postgres_user;
 \q
@@ -27,6 +27,6 @@ kill the server from the pgadmin icon and do the login again into your console f
 sudo -i -u postgres -> psql -->'postgres=# drop database name_of_the_database;' or DROP DATABASE name_of_the_database;
 
 To Grant privileges:
-psql -d yourDBName
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO userName;
+psql -d my_postgres_db
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO postgres_user;
 
